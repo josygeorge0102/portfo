@@ -1,0 +1,17 @@
+<!--with flask we can build things dynamically Flask sees {} as an expression,it uses jinja a templating language,ginger evaluates {}
+as python-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='user.ico') }}">
+
+</head>
+<body>
+	{{ name }}
+	{{post_id}}
+    <script src='static/script.js'></script>
+</body>
+</html>
